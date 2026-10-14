@@ -1,0 +1,25 @@
+# E-commerce A/B Testing & Statistical Hypothesis Testing in Python 📊🧪
+
+Un progetto pratico di data-driven experimentation focalizzato sull'ottimizzazione del Conversion Rate (CRO) e sulla validazione statistica dei risultati di marketing.
+
+## 🎯 Scenario di Business & Obiettivi
+Spesso le decisioni di prodotto e marketing vengono prese valutando a occhio piccoli scarti percentuali tra varianti, rischiando di scambiare il rumore casuale per un reale miglioramento.
+In questo progetto ho simulato un A/B test su una landing page e-commerce:
+- **Controllo (A):** Pagina standard (2.500 visitatori, 250 conversioni -> CR 10.0%)
+- **Variante (B):** Nuova UX con checkout ottimizzato e social proof (2.500 visitatori, 310 conversioni -> CR 12.4%)
+- **Obiettivo:** Verificare se l'uplift del +24.0% sia statisticamente significativo prima del roll-out al 100% degli utenti.
+
+## 🛠️ Tech Stack & Librerie
+- **Linguaggio:** Python
+- **Analisi Statistica:** `statsmodels`, `scipy`
+- **Data Manipulation:** `pandas`, `numpy`
+- **Visualizzazione Dati:** `matplotlib`, `seaborn`
+
+## 📈 Metodologia & Risultati
+1. **Hypothesis Testing:** Formulazione di ipotesi nulla ($H_0$) e alternativa ($H_1$) con livello di significatività $\alpha = 0.05$ (confidenza 95%).
+2. **Two-Sample Z-Test for Proportions:** Calcolo dello Z-Score e del $p$-value ($p < 0.05$).
+3. **Intervalli di Confidenza (95%):** Misurazione dell'incertezza campionaria per ciascun gruppo per verificare la non sovrapposizione delle stime.
+4. **Verdetto di Business:** Rifiuto di $H_0$ e raccomandazione data-driven di rilascio definitivo della Variante B.
+
+## 🖼️ Visualizzazione Output
+Il report include la generazione automatica del grafico comparativo con barre d'errore (`ab_test_results.png`).
